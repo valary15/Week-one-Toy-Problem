@@ -12,5 +12,8 @@ week one code challenge Java Script
    else if and else has been used.
 
 2. check speed
-If the speed is within or below the speed limit (70 km/h), it logs "OK".
-If the speed exceeds the limit, the number of points is calculated. The calculation subtracts the speed limit from the actual speed and divides by 5 to get the points. git
+   If the speed is within or below the speed limit (70 km/h), it logs "OK".
+   If the speed exceeds the limit, the number of points is calculated. The calculation subtracts the speed limit from the actual speed and divides by 5 to get the points.
+
+3. net Salary Calculation
+   The code calculates the net salary after deductions for PAYE (Pay As You Earn), NHIF (National Hospital Insurance Fund), and NSSF (National Social Security Fund) based on the gross salary one provides.
