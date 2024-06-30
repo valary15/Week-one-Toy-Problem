@@ -10,3 +10,7 @@ week one code challenge Java Script
    If the marks are between 40 and 49 (inclusive), the grade is 'D'.
    If the marks are less than 40, the grade is 'E'.
    else if and else has been used.
+
+2. check speed
+If the speed is within or below the speed limit (70 km/h), it logs "OK".
+If the speed exceeds the limit, the number of points is calculated. The calculation subtracts the speed limit from the actual speed and divides by 5 to get the points. git
