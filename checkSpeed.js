@@ -1,15 +1,10 @@
 function checkSPeed(speed) {
-  if (speed <= 70) {
-    console.log("OK");
-  } else {
-    const points = (speed - 70) / 5;
-
-    if (points > 12) {
-      console.log("License suspended");
-    } else {
-      console.log("Points ", points);
-    }
+  const speedLimit = 70;
+  const kmPerDemeritPoint = 5;
+  if (speed <= speedLimit) {
+    console.log('Ok');
   }
 }
 
-checkSPeed(80);
+    
+  
