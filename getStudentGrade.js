@@ -1,3 +1,7 @@
+const prompt = require('prompt-sync')();
+
+let marks = prompt("Enter your grade?");
+
 function getStudentGrade(marks) {
   if (marks < 0 || marks > 100) {
     return "Marks should be between 0 and 100";
@@ -16,4 +20,4 @@ function getStudentGrade(marks) {
   }
 }
 
-console.log(getStudentGrade(40));
+console.log(getStudentGrade(marks));

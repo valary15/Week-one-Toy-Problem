@@ -1,0 +1,14 @@
+{
+  "name": "week-one-toy-problem",
+  "version": "1.0.0",
+  "description": "Check Speed // Function calculates demerit points and rounds them using 'math.floo' // checkspeed function is used to evalute the speed of a car and then determines if it has gone beyond the predefined speed limit //constant ; THe speed limit has been set to 70 as the maximum allowed //kmPerDemeritPoind, set at 5 every km above the maximum with 5km one gets 1 demerit point //If within the speed limit the console logs ok //If your demerit point goesabove 12 you get a liscence suspended",
+  "main": "checkSpeed.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}

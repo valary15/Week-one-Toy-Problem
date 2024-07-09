@@ -1,3 +1,7 @@
+const prompt = require("prompt-sync")();
+
+let speed = prompt("Enter your Salary?");
+
 function calculatePAYE(grossPay) {
   let taxToDeduct = 0;
 

@@ -1,3 +1,7 @@
+const prompt = require("prompt-sync")();
+
+let speed= prompt("Enter your speed?");
+
 function checkSpeed(speed) {
   const speedLimit = 70;
   const kmPerDemeritPoint = 5;
@@ -8,13 +12,11 @@ function checkSpeed(speed) {
     const demeritPoints = Math.floor((speed - speedLimit) / kmPerDemeritPoint);
 
     if (demeritPoints > 12) {
-      console.log("License suspended");
+      return"License suspended";
     } else {
       console.log(`Points: ${demeritPoints}`);
     }
   }
 }
 
-checkSpeed(75);
-checkSpeed(100);
-checkSpeed(135);
+console.log(checkSpeed(speed));
