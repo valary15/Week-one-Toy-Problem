@@ -17,5 +17,3 @@ function getStudentGrade(marks) {
 }
 
 console.log(getStudentGrade(40));
-
-// add
