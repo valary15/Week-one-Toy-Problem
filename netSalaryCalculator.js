@@ -1,6 +1,6 @@
 const prompt = require("prompt-sync")();
 
-let speed = prompt("Enter your Salary?");
+let salary = prompt("Enter your Salary?");
 
 function calculatePAYE(grossPay) {
   let taxToDeduct = 0;
@@ -79,4 +79,4 @@ function calculateNetSalary(salary) {
   return netIncome;
 }
 
-console.log(calculateNetSalary(200000));
+console.log(calculateNetSalary(salary));

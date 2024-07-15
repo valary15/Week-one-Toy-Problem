@@ -1,20 +1,27 @@
 const prompt = require("prompt-sync")();
 
-let speed= prompt("Enter your speed?");
-
+let speed;
+do {
+  speed = prompt("Enter your speed? ");
+  speed = parseFloat(speed); // convert input to a float
+  if (isNaN(speed)) {
+    console.log("Please enter a valid number.");
+  }
+} while (isNaN(speed));
 function checkSpeed(speed) {
+
   const speedLimit = 70;
   const kmPerDemeritPoint = 5;
 
   if (speed <= speedLimit) {
-    console.log("Ok");
+    return "Ok";
   } else {
     const demeritPoints = Math.floor((speed - speedLimit) / kmPerDemeritPoint);
 
     if (demeritPoints > 12) {
-      return"License suspended";
+      return "License suspended";
     } else {
-      console.log(`Points: ${demeritPoints}`);
+      return `Points: ${demeritPoints}`;
     }
   }
 }
